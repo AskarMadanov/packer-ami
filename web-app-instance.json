@@ -1,0 +1,19 @@
+{
+    "builders": [
+        {
+            "type": "amazon-instance",
+            "access_key": "AKIAV25RB46XF7ERPHHE",
+            "secret_key": "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",
+            "region": "us-east-1",
+            "ami_name": "web-amiinstancestore-packer",
+            "source_ami": "ami-0947d2ba12ee1ff75",
+            "instance_type": "t2.micro",
+            "ssh_username": "ec2-user",
+
+            "account_id": "401413892014",
+            "s3_bucket": "packer-images-exchange-app",
+            "x509_cert_path": "/Users/askarmadanov/312code/exchange-app/server.cer",
+            "x509_key_path": "server.key"
+        }
+    ]
+}
